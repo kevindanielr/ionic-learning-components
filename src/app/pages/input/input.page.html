@@ -1,0 +1,18 @@
+<app-header titulo="Inputs - Forma"></app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+
+    <ion-list-header>
+      <ion-label>Nombre: {{ nombre || 'No hay nombre' }}</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label position="floating" >Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+
+    <ion-title>Botones</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Botones normales -->
+  <ion-button size="sm" expand="full" fill="solid" shape="round">
+    Small
+  </ion-button>
+
+  <ion-button size="default" expand="full" fill="solid" shape="round">
+    Default
+  </ion-button>
+
+  <ion-button size="large" expand="full" fill="solid" shape="round">
+    Large
+  </ion-button>
+
+
+  <!-- Anchor -->
+  <ion-button class="top-20" expand="full" fill="solid" shape="round" routerLink="/inicio" color="secondary">
+    RouterLink
+  </ion-button>
+
+  <!-- ion-row + ion-col -->
+  <ion-row>
+    <ion-col size="6">
+      <ion-button class="top-20" expand="full" fill="solid" shape="round" routerLink="/inicio" color="secondary">
+        RouterLink
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button class="top-20" expand="full" fill="solid" shape="round" routerLink="/inicio" color="secondary">
+        RouterLink
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- Fill -->
+
+  <ion-button class="top-20" fill="clear" shape="round" routerLink="/inicio" color="secondary">
+    Clear
+  </ion-button>
+
+  <ion-button class="top-20" fill="outline" shape="round" routerLink="/inicio" color="tertiary">
+    Outline
+  </ion-button>
+
+  <ion-button class="top-20"  fill="solid" shape="round" routerLink="/inicio" color="tertiary">
+    Solid
+  </ion-button>
+
+</ion-content>
