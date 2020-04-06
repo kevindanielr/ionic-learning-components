@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
+import { Componente } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-menu-principal',
@@ -7,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPrincipalComponent implements OnInit {
 
-  constructor() { }
+  componentes: Observable<Componente[]>;//Es un observable que responde un arreglo de componentes
 
-  ngOnInit() {}
+  constructor(private dataService:DataService) { }
+
+  ngOnInit() {
+    this.componentes = this.dataService.getMenuOpts();
+  }
 
 }
